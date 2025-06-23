@@ -78,14 +78,10 @@ body {
   margin-top: 1rem;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  font-weight: 800;
-}
-
+/* UPDATED hero-description for inline buttons */
 .hero-description {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -95,14 +91,16 @@ body {
 }
 
 .btn {
-  background-color: hsl(5, 85%, 63%);
-  color: white;
   padding: 0.8rem 1.5rem;
-  text-transform: uppercase;
+  background-color: hsl(5, 93%, 50%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
   font-weight: 700;
   letter-spacing: 2px;
-  width: fit-content;
-  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
@@ -216,4 +214,79 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+/* Dark Mode Styles */
+body.dark {
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+}
+
+body.dark .nav-list a {
+  color: hsl(233, 8%, 79%);
+}
+
+body.dark .nav-list a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
+body.dark .hero-description p,
+body.dark .bottom-articles p {
+  color: hsl(233, 8%, 79%);
+}
+
+body.dark .btn {
+  background-color: hsl(35, 77%, 62%);
+  color: black;
+}
+
+body.dark .btn:hover {
+  background-color: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
+}
+
+body.dark .sidebar {
+  background-color: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
+}
+
+body.dark .sidebar h2 {
+  color: hsl(5, 85%, 63%);
+}
+
+body.dark .sidebar-item p {
+  color: hsl(240, 100%, 5%);
+}
+
+body.dark .sidebar-item h3 a {
+  color: hsl(240, 100%, 5%);
+}
+
+/* Dark Mode Toggle Button Styles */
+/* UPDATED: removed fixed position, made it inline with other buttons */
+#dark-toggle {
+  padding: 0.8rem 1.5rem;
+  background-color: hsl(5, 93%, 50%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#dark-toggle:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+body.dark #dark-toggle {
+  background-color: hsl(35, 77%, 62%);
+  color: black;
+}
+
+body.dark #dark-toggle:hover {
+  background-color: hsl(36, 100%, 99%);
+  color: hsl(240, 100%, 5%);
 }
