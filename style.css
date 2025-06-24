@@ -93,7 +93,7 @@ body {
 .btn {
   padding: 0.8rem 1.5rem;
   background-color: hsl(5, 93%, 50%);
-  color: white;
+  color: rgb(246, 243, 243);
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -110,7 +110,7 @@ body {
 /* Sidebar */
 .sidebar {
   background-color: hsl(240, 100%, 5%);
-  color: white;
+  color: rgb(7, 7, 7);
   padding: 1.5rem;
 }
 
@@ -128,7 +128,7 @@ body {
 }
 
 .sidebar-item h3 a {
-  color: white;
+  color: rgb(246, 242, 242);
   text-decoration: none;
 }
 
@@ -170,7 +170,7 @@ body {
 }
 
 .bottom-articles h3 a {
-  color: hsl(240, 100%, 5%);
+  color: hsl(0, 0%, 4%);
   text-decoration: none;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .bottom-articles p {
   font-size: 0.85rem;
-  color: hsl(236, 13%, 42%);
+  color: hsl(0, 0%, 2%);
 }
 
 /* Responsive Design */
@@ -231,8 +231,12 @@ body.dark .nav-list a:hover {
 }
 
 body.dark .hero-description p,
+.bottom-articles h3 a {
+  color: hsl(0, 13%, 94%);
+  text-decoration: none;
+}
 body.dark .bottom-articles p {
-  color: hsl(233, 8%, 79%);
+  color: hsl(230, 12%, 90%);
 }
 
 body.dark .btn {
@@ -242,12 +246,12 @@ body.dark .btn {
 
 body.dark .btn:hover {
   background-color: hsl(36, 100%, 99%);
-  color: hsl(240, 100%, 5%);
+  color: hsl(0, 0%, 5%);
 }
 
 body.dark .sidebar {
   background-color: hsl(36, 100%, 99%);
-  color: hsl(240, 100%, 5%);
+  color: hsl(240, 14%, 92%);
 }
 
 body.dark .sidebar h2 {
@@ -255,11 +259,11 @@ body.dark .sidebar h2 {
 }
 
 body.dark .sidebar-item p {
-  color: hsl(240, 100%, 5%);
+  color: hsl(240, 4%, 5%);
 }
 
 body.dark .sidebar-item h3 a {
-  color: hsl(240, 100%, 5%);
+  color: hsl(0, 0%, 6%);
 }
 
 /* Dark Mode Toggle Button Styles */
@@ -278,7 +282,7 @@ body.dark .sidebar-item h3 a {
 }
 
 #dark-toggle:hover {
-  background-color: hsl(240, 100%, 5%);
+  background-color: hsl(240, 33%, 4%);
 }
 
 body.dark #dark-toggle {
@@ -288,5 +292,5 @@ body.dark #dark-toggle {
 
 body.dark #dark-toggle:hover {
   background-color: hsl(36, 100%, 99%);
-  color: hsl(240, 100%, 5%);
+  color: hsl(240, 20%, 2%);
 }
